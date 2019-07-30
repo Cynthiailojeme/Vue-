@@ -1,28 +1,35 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <sidebar/>
+    <navbar/>
+    <paymentbar/>
+    <performance/>
+    <absent/>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import sidebar from '@/components/sidebar.vue';
+import navbar from '@/components/navbar.vue';
+import paymentbar from '@/components/paymentbar.vue';
+import performance from '@/components/performance.vue';
+import absent from '@/components/absent.vue';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    sidebar,
+    navbar,
+    paymentbar,
+    performance,
+    absent
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body{
+  background: #F8F8F8;
+  font-family: 'Khula', sans-serif;
 }
 </style>
